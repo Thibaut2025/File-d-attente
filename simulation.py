@@ -24,8 +24,8 @@ BLACK = (0, 0, 0)
 GREY = (200, 200, 200)
 
 # Paramètres de base
-ARRIVAL_RATE_NORMAL = 1 / 5 # 1 client toutes les 5 secondes
-SERVICE_RATE = 1 / 20 # 1 client toutes les 20 secondes
+ARRIVAL_RATE_NORMAL = 1 / 5 # 1 client toutes les 5 secondes #lambda
+SERVICE_RATE = 1 / 20 # 1 client toutes les 20 secondes #mu
 MAX_CLIENTS = 10 # Nombre maximum de clients à générer
 SPEED = 90  # Vitesse de la simulation (FPS)
 Temps_simulation = 60  # Durée de la simulation en secondes
