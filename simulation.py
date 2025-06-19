@@ -2,12 +2,16 @@ import pygame
 import numpy as np
 import time
 import sys
+import ctypes
 import matplotlib.pyplot as plt
 
 # Initialisation
 pygame.init()
-WIDTH, HEIGHT = 1000, 700
-win = pygame.display.set_mode((WIDTH, HEIGHT))
+user32 = ctypes.windll.user32
+screen_width = user32.GetSystemMetrics(0)
+screen_height = user32.GetSystemMetrics(1)
+# WIDTH, HEIGHT = 1000, 700
+win = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("Simulation - File d'attente MTN (Interactive)")
 
 # Couleurs
